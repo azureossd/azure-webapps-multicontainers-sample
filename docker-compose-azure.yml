@@ -1,7 +1,7 @@
 version: '3'
 services:
   client:
-    image: edisga.azurecr.io/client:02
+    image: edisga.azurecr.io/client:01
     ports:
        - "3000:3000"
        - "2222:2222"
@@ -11,6 +11,6 @@ services:
        - apiURL=http://server:3001
 
   server:
-    image: edisga.azurecr.io/server:02
+    image: edisga.azurecr.io/server:01
     ports:
       - "3001:3001"
