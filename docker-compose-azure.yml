@@ -1,16 +1,16 @@
 version: '3'
 services:
   client:
-    image: edisga.azurecr.io/client:01
+    image: edisga.azurecr.io/client:02
     ports:
        - "3000:3000"
        - "2222:2222"
     depends_on:
        - server
     environment:
-        - apiURL=http://server:3001
+       - apiURL=http://server
 
   server:
-    image: edisga.azurecr.io/server:01
+    image: edisga.azurecr.io/server:02
     ports:
       - "3001:3001"

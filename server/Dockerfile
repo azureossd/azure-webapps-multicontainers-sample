@@ -15,6 +15,5 @@ RUN apt-get update \
 COPY sshd_config /etc/ssh/
 COPY init.sh /usr/local/bin/
 
-EXPOSE 2222 3001
-ENV PORT 3001
+EXPOSE 3001
 ENTRYPOINT ["/usr/local/bin/init.sh"]
