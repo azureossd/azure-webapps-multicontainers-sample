@@ -5,7 +5,7 @@ services:
       context: ./client
       dockerfile: Dockerfile
     environment:
-      - apiURL=http://localhost:3001
+      - apiURL=http://node-server:3001
     ports:
       - '3000:3000'
       - '2222:2222'

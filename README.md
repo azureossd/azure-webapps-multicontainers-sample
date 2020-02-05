@@ -1,7 +1,7 @@
 ## Running locally
 
 1. To run locally, use docker-compose.yaml and this command: docker-compose up
-2. Then browse to http://localhost:3000 this will do a request to http://localhost:3001/api/items
+2. Then browse to http://localhost:3000 this will do a request to http://node-server:3001/api/items
 
 ## Deploying to Azure Container Registry
 
