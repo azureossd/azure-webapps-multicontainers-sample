@@ -1,7 +1,10 @@
 ## Running locally
 
-1. To run locally, use docker-compose.yaml and this command: docker-compose up
-2. Then browse to http://localhost:3000 this will do a request to http://node-server:3001/api/items
+Requirements: 
+1. Create a folder in c:\data
+2. If you need to change and build try the following command first: docker-compose up --build  
+2.1 If not to run locally, use docker-compose.yaml and this command: docker-compose up 
+3. Then browse to http://localhost:3000 this will do a request to http://node-server:3001/api/items
 
 ## Deploying to Azure Container Registry
 
@@ -16,3 +19,4 @@
 ## Deploying to Azure Web Apps
 
 1. Use docker-compose.azure.yml 
+2. Create a path mapping in the portal or using az cli, with media as the name using azure files and pointing to /data

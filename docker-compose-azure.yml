@@ -14,3 +14,5 @@ services:
     image: edisga.azurecr.io/server:01
     ports:
       - "3001:3001"
+    volumes:
+      - media:/data
