@@ -1,7 +1,7 @@
 FROM node:12.8
 RUN mkdir /client
 WORKDIR /client
-ADD package.json /client/
+COPY package.json /client/
 RUN npm install
 COPY . .
 

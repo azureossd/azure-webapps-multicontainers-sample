@@ -1,19 +1,19 @@
 FROM node:12.8
 RUN mkdir /server
 WORKDIR /server
-ADD package.json /server/
+COPY package.json /server/
 RUN npm install
-ADD . /server/
+COPY . .
 
 # ssh
 ENV SSH_PASSWD "root:Docker!"
 RUN apt-get update \
-        && apt-get install -y --no-install-recommends dialog \
-	    && apt-get install -y --no-install-recommends openssh-server \
+        && apt-get install -y openssh-server \
 	    && echo "$SSH_PASSWD" | chpasswd 
 
 COPY sshd_config /etc/ssh/
-COPY init.sh /usr/local/bin/
+COPY entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
-EXPOSE 3001
-ENTRYPOINT ["/usr/local/bin/init.sh"]
+EXPOSE 3001 2222
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
