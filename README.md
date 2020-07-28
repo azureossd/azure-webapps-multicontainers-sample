@@ -3,7 +3,7 @@
 Requirements: 
 1. Create a folder in `c:\data (using Windows)` or change this one for a folder or mount in Linux.
 2. Rename the file `docker-compose-local.yml` to `docker-compose.yml`. 
-    -  If you haven't build the containers first try the following command: `docker-compose up --build` (This command build and run the images) 
+    -  If you haven't built the containers first try the following command: `docker-compose up --build` (This command build and run the images) 
     -  If you have already built the containers and you want to run locally, use docker-compose.yaml and this command: docker-compose up 
 3. Then browse to http://localhost:3000 this will do a request to http://node-server:3001/api/items
 4. Press ctrl + c twice to exit or use `docker-compose up -d` to detach.
