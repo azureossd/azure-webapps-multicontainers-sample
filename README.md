@@ -20,4 +20,4 @@
 ## Deploying to Azure Web Apps
 
 1. Use `docker-compose-azure-acr.yml`  or `docker-compose-azure-dockerhub.yml`
-2. Create a path mapping in the portal or using az cli, with **media** as the name using azure files and pointing to */data**
+2. Create a path mapping in the portal or using az cli, with **media** as the name using azure files and pointing to **/data**
