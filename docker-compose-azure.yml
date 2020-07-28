@@ -8,7 +8,7 @@ services:
     depends_on:
        - server
     environment:
-       - apiURL=http://server:3001
+       - server_url=http://server:3001
 
   server:
     image: edisga.azurecr.io/server:01

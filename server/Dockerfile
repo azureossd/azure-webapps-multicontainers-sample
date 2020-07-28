@@ -1,4 +1,4 @@
-FROM node:9.4
+FROM node:12.8
 RUN mkdir /server
 WORKDIR /server
 ADD package.json /server/

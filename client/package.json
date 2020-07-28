@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "1.0.0",
-  "description": "sample client to execute api request from server rendering side",
+  "description": "Sample client to request server rest api container",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
