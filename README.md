@@ -5,7 +5,7 @@
 2. Rename the file `docker-compose-local.yml` to `docker-compose.yml`. 
     -  If you haven't built the containers first try the following command: `docker-compose up --build` (This command build and run the images). 
     -  If you have already built the containers and you want to run locally, use `docker-compose.yml` and run this command: `docker-compose up` or detach with `docker-compose up -d`
-3. Then browse to //http://localhost:3000** this will do a request to **http://node-server:3001/api/items**
+3. Then browse to **http://localhost:3000** this will do a request to **http://node-server:3001/api/items**
 4. Press (ctrl + c) twice to exit or docker stop all containers with `docker stop $(docker ps -a -q)` 
 
 ## Deploying to Azure Container Registry
