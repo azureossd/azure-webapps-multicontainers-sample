@@ -1,7 +1,7 @@
 ## Running locally
 
 Requirements: 
-1. Create a folder in c:\data
+1. Create a folder in c:\data (using Windows) or change this one for folder in Linux.
 2. If you need to change and build try the following command first: docker-compose up --build  
 2.1 If not to run locally, use docker-compose.yaml and this command: docker-compose up 
 3. Then browse to http://localhost:3000 this will do a request to http://node-server:3001/api/items
